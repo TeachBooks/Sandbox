@@ -7,7 +7,7 @@ name: deploy-book
 on:
   push:
     branches:
-    - '*'
+    - '**'
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
@@ -48,7 +48,7 @@ jobs:
         if [ "$BRANCHES_TO_DEPLOY" == '*' ]; then
           branches=$(git branch -r | sed 's,\s*origin/,,g' | jq -Rn '[inputs]')
         else
-          branches=$(echo $BRANCHES_TO_DEPLOY | tr ' ' '\n' | jq -Rn '[inputs]')
+          branches=$(echo "$BRANCHES_TO_DEPLOY" | tr ' ' '\n' | grep -E '\S' | jq -Rn '[inputs]')
         fi
         echo "branches=$(echo $branches)" >> $GITHUB_OUTPUT
 
@@ -93,17 +93,26 @@ jobs:
       name: Preprocess & build the book from branch
       run: |
         echo $PATH
+        # Install wrapper
+        # NOTE: teachbooks is already installed w requirements.txt, however not on PATH
+        # Installing with --user fixes this.
+        # TODO remove --extra-index-url once teachbooks is on PyPI
         pip install --user teachbooks --extra-index-url https://gitlab.tudelft.nl/api/v4/projects/13957/packages/pypi/simple
-        cat book/_toc.yml
-        teachbooks build --publish --process-only book/
-        mv book/.psorbooks/publish/_toc.yml book/.psorbooks/publish/_config.yml book/
-        cat book/_toc.yml
-        jupyter-book build book/
+        if [ ${{matrix.branch}} == $PRIMARY_BRANCH ]; then
+          teachbooks build --publish book/
+        else
+          teachbooks build book/
+        fi
+
+
+    - name: Clean branch name of disallowed characters
+      run: |
+        echo "MATRIX_BRANCH_NAME_CLEAN=$(echo ${{ matrix.branch }} | tr '/":<>|*?\/\\' '-')" >> $GITHUB_ENV
 
     - name: Upload the built book HTML as an artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ matrix.branch }}
+        name: ${{ env.MATRIX_BRANCH_NAME_CLEAN }}
         path: "book/_build/html"
 
   deploy-books:
@@ -137,11 +146,11 @@ jobs:
 
     - name: Symlink branch aliases
       run: |
-        echo $BRANCH_ALIASES | tr ' ' '\n' | { grep -E '\S' | :; } |
+        echo $BRANCH_ALIASES | tr ' ' '\n' | grep -E '\S' |
         while IFS=':' read -r key value; do
           # If the target branch is to be deployed, make symlink to it.
           if [ "$BRANCHES_TO_DEPLOY" == "*" ] || echo $BRANCHES_TO_DEPLOY | tr ' ' '\n' | grep "^$value$"; then
-            echo link $key -> $value
+            echo link $key "->" $value
             ln -s $value final/$key
           fi
         done
@@ -160,3 +169,4 @@ permissions:
   contents: read
   pages: write
   id-token: write
+
