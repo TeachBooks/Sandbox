@@ -8,4 +8,6 @@ parts:
       sections:
       - file: some_content/text_and_code.ipynb
     - file: references.md
+    # START REMOVE-FROM-PUBLISH
     - file: credits.md
+    # END REMOVE-FROM-PUBLISH
