@@ -7,6 +7,7 @@ Here we mess around with stuff
 
 Draft edit 6
 edit 7
+edit 8
 ---
 
 This book is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
