@@ -21,7 +21,7 @@ on:
 # https://docs.github.com/en/actions/learn-github-actions/variables#creating-configuration-variables-for-a-repository
 env:
   # `publish` as primary by default
-  PRIMARY_BRANCH: ${{ vars.PRIMARY_BRANCH != '' && vars.PRIMARY_BRANCH || 'main' }}
+  PRIMARY_BRANCH: ${{ vars.PRIMARY_BRANCH != '' && vars.PRIMARY_BRANCH || 'publish' }}
   # Space-separated list of alias-rules, e.g. 'draft:main alias:really-long-branch-name'
   # By default, `draft` links to `main`.
   # If no aliases are wanted, BRANCH_ALIASES may be set to ' ' (space).
