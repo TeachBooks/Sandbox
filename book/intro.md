@@ -1,9 +1,9 @@
 (intro)=
-# Welcome to the Template Book
+# Welcome to the Sandbox book
 
 _Write book intro here. This is the first page the student will see when opening the url._
 
-This book can be used to fork other books. It includes all software developed by the CEG interactive books initiative and make it easier to keep various software in those other books up to date.
+Here we mess around with stuff
 
 ---
 
