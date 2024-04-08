@@ -23,10 +23,15 @@ sphinx:
     thebe_config:
       use_thebe_lite: true
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
+    language: en
+    locale_dirs: ['locale/']
   extra_extensions:
     - sphinx.ext.imgconverter
     - download_link_replacer
     - jupyterbook_patches
+    - sphinx-translation-button
 
 bibtex_bibfiles: 
   - references.bib
+
+languages: [["Nederlands", nl], ["English", en]]

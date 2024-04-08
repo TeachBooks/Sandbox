@@ -1,5 +1,6 @@
 # first list the packages you wish to download from PyPI
 jupyter-book
+sphinx-translation-button
 # numpy
 
 # docutils version for reference page formatting
