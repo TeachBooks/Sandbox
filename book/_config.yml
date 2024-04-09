@@ -11,10 +11,6 @@ launch_buttons:
 
 only_build_toc_files: true
 
-html:
-  comments:
-    hypothesis: true
-
 sphinx:
   config:
     html_show_copyright: true
@@ -23,7 +19,7 @@ sphinx:
     thebe_config:
       use_thebe_lite: true
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
-    language: en
+    language: nl
     locale_dirs: ['locale/']
   extra_extensions:
     - sphinx.ext.imgconverter

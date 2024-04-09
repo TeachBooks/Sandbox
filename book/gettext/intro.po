@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Delft University of Technology, CC BY 4.0
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 16:52+0200\n"
+"PO-Revision-Date: 2024-04-09 16:58+0200\n"
+"Last-Translator: Tom van Woudenberg <EMAIL@ADDRESS>\n"
+"Language: nl\n"
+"Language-Team: nl <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../intro.md:1
+msgid "Contents"
+msgstr "Inhoudsopgave"
+
+#: ../intro.md:2
+msgid "Welcome to the Sandbox book"
+msgstr "Welkom bij het Sandbox-boek"
+
+#: ../intro.md:4
+msgid ""
+"_Write book intro here. This is the first page the student will see when "
+"opening the url._"
+msgstr ""
+"_Schrijf hier de introductie van het boek. Dit is de eerste pagina die de student ziet bij het openen van de URL._"
+
+#: ../intro.md:6
+msgid "Here we mess around with stuff"
+msgstr "Hier experimenteren we met dingen"
+
+#: ../intro.md:8
+msgid "Draft edit 10"
+msgstr "Conceptbewerking 10"
+
+#: ../intro.md:11
+msgid ""
+"This book is licensed under a <a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons "
+"Attribution 4.0 International License</a>."
+msgstr ""
+"Dit boek is gelicenseerd onder een <a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons "
+"Naamsvermelding 4.0 Internationaal-licentie</a>."
+
+#: ../intro.md:13
+msgid ""
+"<a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by/4.0/\"><img alt=\"Creative "
+"Commons License\" style=\"border-width:0\" "
+"src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\"/></a>"
+msgstr ""
+"<a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by/4.0/\"><img alt=\"Creative "
+"Commons-licentie\" style=\"border-width:0\" "
+"src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\"/></a>"
+

@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Delft University of Technology, CC BY 4.0
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 16:52+0200\n"
+"PO-Revision-Date: 2024-04-09 16:58+0200\n"
+"Last-Translator: Tom van Woudenberg <EMAIL@ADDRESS>\n"
+"Language: nl\n"
+"Language-Team: nl <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../credits.md:2
+msgid "Credits and License"
+msgstr "Credits en Licentie"
+
+#: ../credits.md:4
+msgid "You can refer to this book as:"
+msgstr "U kunt naar dit boek verwijzen als:"
+
+#: ../credits.md:6
+msgid "`<Author>` `<Year>` `<Book Title>`, TU Delft Open, `<Year>`, doi XXXXXXXX."
+msgstr "`<Auteur>` `<Jaar>` `<Boektitel>`, TU Delft Open, `<Jaar>`, doi XXXXXXXX."
+
+#: ../credits.md:8
+msgid ""
+"The introduction, structure of the book and formatting of contents is "
+"done by the Editor, `<Author>`. Some chapters and pages have additional "
+"primary authors who are identified within the book either at the bottom "
+"of the first page in a chapter, or at the bottom of an individual page, "
+"as necessary. If an author is not listed on a particular page, it is "
+"`<Author>`."
+msgstr ""
+"De introductie, structuur van het boek en opmaak van de inhoud is "
+"gedaan door de Redacteur, `<Auteur>`. Sommige hoofdstukken en pagina's hebben "
+"extra primaire auteurs die binnen het boek worden geïdentificeerd, ofwel onderaan "
+"de eerste pagina in een hoofdstuk, of onderaan een individuele pagina, "
+"indien nodig. Als een auteur niet wordt vermeld op een bepaalde pagina, is het "
+"`<Auteur>`."
+
+#: ../credits.md:10
+msgid "You can refer to individual chapters or pages within this book as:"
+msgstr "U kunt individuele hoofdstukken of pagina's in dit boek als volgt aanduiden:"
+
+#: ../credits.md:12
+msgid ""
+"`<Primary Author>` `<Year>` `<Title of Chapter or Page>`. In `<Author>` "
+"(Ed.), `<Book Title>` TU Delft Open,`<Year>`, doi XXXXXXXX."
+msgstr ""
+"`<Primaire Auteur>` `<Jaar>` `<Titel van Hoofdstuk of Pagina>`. In `<Auteur>` "
+"(Red.), `<Boektitel>` TU Delft Open,`<Jaar>`, doi XXXXXXXX."
+
+#: ../credits.md:14
+msgid ""
+"Although content will be added over time, chapter titles and URL's in "
+"this book are expected to remain relatively static. However, we make no "
+"guarantee, so if it is important for you to reference a specific location"
+" within the book, we recommend including the complete URL and date of "
+"access in your reference."
+msgstr ""
+"Hoewel er in de loop van de tijd inhoud zal worden toegevoegd, worden hoofdstuktitels en URL's in "
+"dit boek verwacht relatief statisch te blijven. We geven echter geen "
+"garantie, dus als het belangrijk is om naar een specifieke locatie te verwijzen"
+" binnen het boek, raden we aan de volledige URL en de datum van "
+"toegang op te nemen in uw referentie."
+
+#: ../credits.md:16
+msgid "How the book is made"
+msgstr "Hoe het boek is gemaakt"
+
+#: ../credits.md:18
+msgid ""
+"This book is created using open source tools: it is a Jupyter Book that "
+"is written using Markdown, Jupyter notebooks and Python files to generate"
+" some figures. The files are stored on a [public GitLab repository of TU "
+"Delft](https://gitlab.tudelft.nl/interactivetextbooks-"
+"citg/$CI_PROJECT_NAME/). The published version of this book is compiled "
+"from a special branch (`xxxxxxxx`). View the repository README file or "
+"contact the author for additional information."
+msgstr ""
+"Dit boek is gemaakt met behulp van open source tools: het is een Jupyter Book dat "
+"is geschreven in Markdown, Jupyter notebooks en Python-bestanden om "
+"sommige figuren te genereren. De bestanden worden opgeslagen in een [openbare GitLab-opslagplaats van TU "
+"Delft](https://gitlab.tudelft.nl/interactivetextbooks-"
+"citg/$CI_PROJECT_NAME/). De gepubliceerde versie van dit boek is samengesteld "
+"uit een speciale branch (`xxxxxxxx`). Bekijk het README-bestand van de opslagplaats of "
+"neem contact op met de auteur voor aanvullende informatie."
+
+#: ../credits.md:21
+msgid "About the Editor"
+msgstr "Over de Redacteur"
+
+#: ../credits.md:23
+msgid "`<Author>`"
+msgstr "`<Auteur>`"
+
+#: ../credits.md:25
+msgid "Acknowledgements"
+msgstr "Erkenningen"
+
+#: ../credits.md:28
+msgid ""
+"This book is licensed under a <a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons "
+"Attribution 4.0 International License</a>."
+msgstr ""
+"Dit boek is gelicentieerd onder een <a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons "
+"Naamsvermelding 4.0 Internationaal Licentie</a>."
+
+#: ../credits.md:30
+msgid ""
+"<a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/by/4.0/\"><img alt=\"Creative "
+"Commons License\" style=\"border-width:0\" "
+"src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\"/></a>"
+msgstr ""
