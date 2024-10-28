@@ -1,5 +1,5 @@
 # first list the packages you wish to download from PyPI
-pip install git+https://github.com/TeachBooks/TeachBooks.git@build_release
+git+https://github.com/TeachBooks/TeachBooks.git@build_release
 jupyterbook-patches
 # numpy
 
