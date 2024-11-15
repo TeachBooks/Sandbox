@@ -1,5 +1,5 @@
 # first list the packages you wish to download from PyPI
-teachbooks # depends on jupyter-book
+git+https://github.com/TeachBooks/TeachBooks.git@release_warning # depends on jupyter-book
 jupyterbook-patches
 # numpy
 
